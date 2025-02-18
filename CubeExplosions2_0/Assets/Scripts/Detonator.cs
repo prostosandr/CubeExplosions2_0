@@ -3,14 +3,41 @@ using UnityEngine;
 
 public class Detonator : MonoBehaviour
 {
-    [SerializeField] private float _explosionRadius;
-    [SerializeField] private float _explosionForce;
+    private float _maxExplosionForce;
+    private float _explosionRadius;
 
-    public void Explode(List<Rigidbody> explodableObjects, Vector3 oldCubePosition)
+    public void Explode(Vector3 ñubePosition, float MaxExplosionForce, float explosionRadius)
     {
-        foreach (Rigidbody explodableObject in explodableObjects)
-        {
-            explodableObject.AddExplosionForce(_explosionForce, oldCubePosition, _explosionForce);
-        }
+       SetParameter(MaxExplosionForce, explosionRadius);
+
+        foreach (Rigidbody explodableObject in GetExplodableObjects())
+            explodableObject.AddExplosionForce(GetExplosionForce(explodableObject.transform.position), ñubePosition, _explosionRadius);
+    }
+
+    private List<Rigidbody> GetExplodableObjects()
+    {
+        Collider[] hits = Physics.OverlapSphere(transform.position, _explosionRadius);
+
+        List<Rigidbody> explodableObject = new();
+
+        foreach (Collider hit in hits)
+            if (hit.attachedRigidbody != null)
+                explodableObject.Add(hit.attachedRigidbody);
+
+        return explodableObject;
+    }
+
+    private float GetExplosionForce(Vector3 explodableObjectPosition)
+    {
+        float minExplosionForce = 0;
+        float distance = Vector3.Distance(transform.position, explodableObjectPosition);
+
+        return Mathf.Lerp(_maxExplosionForce, minExplosionForce, distance / _explosionRadius);
+    }
+
+    private void SetParameter(float MaxExplosionForce, float explosionRadius)
+    {
+        _maxExplosionForce = MaxExplosionForce;
+        _explosionRadius = explosionRadius;
     }
 }

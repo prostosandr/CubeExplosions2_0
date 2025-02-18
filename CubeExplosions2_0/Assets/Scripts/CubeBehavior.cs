@@ -20,29 +20,42 @@ public class CubeBehavior : MonoBehaviour
     {
         int divisor = 2;
 
-        if (TrySpawn(cube.ChanceTreshold))
-            _detonator.Explode(_spawner.Spawn(cube, GetTramsform(cube.transform, divisor), GetChance(cube.ChanceTreshold, divisor)), cube.transform.position);
+        Transform cubeTransform = GetTransform(cube.transform, divisor);
+
+        if (GetPermitSpawn(cube.ChanceTreshold))
+            _spawner.Spawn(cube, cubeTransform, GetChance(cube.ChanceTreshold, divisor), GetExplosionForce(cube.ExplosionForce, divisor), GetExplosionRadius(cube.ExplosionRadius, divisor));
+        else
+            _detonator.Explode(cubeTransform.position, cube.ExplosionForce, cube.ExplosionRadius);
 
         Destroy(cube.gameObject);
     }
 
+    private float GetExplosionForce(float explosionForce, int divisor)
+    {
+        return explosionForce * divisor;
+    }
+
+    private float GetExplosionRadius(float explosionRadius, int divisor)
+    {
+        return explosionRadius * divisor;
+    }
     private float GetChance(float chanceTreshold, int divisor)
     {
         return chanceTreshold / divisor;
     }
 
-    private Transform GetTramsform(Transform cubeTransform, int divisor)
-    {
-        cubeTransform.localScale /= divisor;
-
-        return cubeTransform;
-    }
-
-    private bool TrySpawn(float chanceTreshold)
+    private bool GetPermitSpawn(float chanceTreshold)
     {
         int minNumberOfChance = 0;
         int maxNumberOfChance = 100;
 
         return Random.Range(minNumberOfChance, maxNumberOfChance) <= chanceTreshold;
+    }
+
+    private Transform GetTransform(Transform cubeTransform, int divisor)
+    {
+        cubeTransform.localScale /= divisor;
+
+        return cubeTransform;
     }
 }
