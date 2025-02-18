@@ -62,8 +62,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Detonator.cs" />
-    <Compile Include="Assets\Scripts\CubeBehavior.cs" />
     <Compile Include="Assets\Scripts\Spawner.cs" />
+    <Compile Include="Assets\Scripts\CubesInteraction.cs" />
     <Compile Include="Assets\Scripts\MouseKeyReader.cs" />
     <Compile Include="Assets\Scripts\Cube.cs" />
   </ItemGroup>

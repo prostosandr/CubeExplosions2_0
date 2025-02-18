@@ -952,7 +952,7 @@ GameObject:
   - component: {fileID: 1038897885}
   - component: {fileID: 1038897889}
   m_Layer: 0
-  m_Name: CubeManager
+  m_Name: CubesInteraction
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -1,7 +1,6 @@
 using UnityEngine;
 
 [RequireComponent(typeof(Renderer))]
-
 public class Cube : MonoBehaviour
 {
     [SerializeField] private float _chanceTreshold;
@@ -21,13 +20,9 @@ public class Cube : MonoBehaviour
         ChangeColor();
     }
 
-    public void SetChanceTreshold(float newChanceTreshold)
+    public void Init(float newChanceTreshold, float newExplosionForce, float newExplosionRadius)
     {
         _chanceTreshold = newChanceTreshold;
-    }
-
-    public void SetExplosionParameter(float newExplosionForce, float newExplosionRadius)
-    {
         _explosionForce = newExplosionForce;
         _explosionRadius = newExplosionRadius;
     }

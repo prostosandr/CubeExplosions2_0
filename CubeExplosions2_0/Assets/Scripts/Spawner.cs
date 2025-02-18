@@ -11,8 +11,7 @@ public class Spawner : MonoBehaviour
         {
             Cube newCube = Instantiate(oldCube, cubeTraform.position, cubeTraform.rotation);
             newCube.transform.localScale = cubeTraform.localScale;
-            newCube.SetChanceTreshold(chanceTreshold);
-            newCube.SetExplosionParameter(explosionForce, explosionRadius);
+            newCube.Init(chanceTreshold, explosionForce, explosionRadius);
         }
     }
 }

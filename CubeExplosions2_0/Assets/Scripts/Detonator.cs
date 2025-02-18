@@ -6,12 +6,12 @@ public class Detonator : MonoBehaviour
     private float _maxExplosionForce;
     private float _explosionRadius;
 
-    public void Explode(Vector3 ñubePosition, float MaxExplosionForce, float explosionRadius)
+    public void Explode(Vector3 ñubePosition, float maxExplosionForce, float explosionRadius)
     {
-       SetParameter(MaxExplosionForce, explosionRadius);
+       SetParameter(maxExplosionForce, explosionRadius);
 
         foreach (Rigidbody explodableObject in GetExplodableObjects())
-            explodableObject.AddExplosionForce(GetExplosionForce(explodableObject.transform.position), ñubePosition, _explosionRadius);
+            explodableObject.AddExplosionForce(GetExplosionForce(ñubePosition, explodableObject.transform.position), ñubePosition, _explosionRadius);
     }
 
     private List<Rigidbody> GetExplodableObjects()
@@ -27,10 +27,10 @@ public class Detonator : MonoBehaviour
         return explodableObject;
     }
 
-    private float GetExplosionForce(Vector3 explodableObjectPosition)
+    private float GetExplosionForce(Vector3 cubePosition, Vector3 explodableObjectPosition)
     {
         float minExplosionForce = 0;
-        float distance = Vector3.Distance(transform.position, explodableObjectPosition);
+        float distance = Mathf.Sqrt((cubePosition - explodableObjectPosition).sqrMagnitude);
 
         return Mathf.Lerp(_maxExplosionForce, minExplosionForce, distance / _explosionRadius);
     }

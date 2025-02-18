@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class CubeBehavior : MonoBehaviour
+public class CubesInteraction : MonoBehaviour
 {
     [SerializeField] private MouseKeyReader _mouseKeyReader;
     [SerializeField] private Spawner _spawner;

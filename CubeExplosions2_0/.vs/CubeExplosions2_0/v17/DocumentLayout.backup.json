@@ -3,20 +3,24 @@
   "WorkspaceRootPath": "D:\\Git\\CubeExplosions2_0\\CubeExplosions2_0\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CC8BEC4E-2F20-3EF4-4442-A6FB845B1C43}|Assembly-CSharp.csproj|d:\\git\\cubeexplosions2_0\\cubeexplosions2_0\\assets\\scripts\\detonator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CC8BEC4E-2F20-3EF4-4442-A6FB845B1C43}|Assembly-CSharp.csproj|D:\\Git\\CubeExplosions2_0\\CubeExplosions2_0\\assets\\scripts\\detonator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CC8BEC4E-2F20-3EF4-4442-A6FB845B1C43}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\detonator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CC8BEC4E-2F20-3EF4-4442-A6FB845B1C43}|Assembly-CSharp.csproj|d:\\git\\cubeexplosions2_0\\cubeexplosions2_0\\assets\\scripts\\cubebehavior.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CC8BEC4E-2F20-3EF4-4442-A6FB845B1C43}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\cubebehavior.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CC8BEC4E-2F20-3EF4-4442-A6FB845B1C43}|Assembly-CSharp.csproj|d:\\git\\cubeexplosions2_0\\cubeexplosions2_0\\assets\\scripts\\mousekeyreader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CC8BEC4E-2F20-3EF4-4442-A6FB845B1C43}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\mousekeyreader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CC8BEC4E-2F20-3EF4-4442-A6FB845B1C43}|Assembly-CSharp.csproj|d:\\git\\cubeexplosions2_0\\cubeexplosions2_0\\assets\\scripts\\spawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CC8BEC4E-2F20-3EF4-4442-A6FB845B1C43}|Assembly-CSharp.csproj|D:\\Git\\CubeExplosions2_0\\CubeExplosions2_0\\assets\\scripts\\spawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CC8BEC4E-2F20-3EF4-4442-A6FB845B1C43}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\spawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC8BEC4E-2F20-3EF4-4442-A6FB845B1C43}|Assembly-CSharp.csproj|d:\\git\\cubeexplosions2_0\\cubeexplosions2_0\\assets\\scripts\\cubesinteraction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC8BEC4E-2F20-3EF4-4442-A6FB845B1C43}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\cubesinteraction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC8BEC4E-2F20-3EF4-4442-A6FB845B1C43}|Assembly-CSharp.csproj|d:\\git\\cubeexplosions2_0\\cubeexplosions2_0\\assets\\scripts\\cube.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC8BEC4E-2F20-3EF4-4442-A6FB845B1C43}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\cube.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC8BEC4E-2F20-3EF4-4442-A6FB845B1C43}|Assembly-CSharp.csproj|D:\\Git\\CubeExplosions2_0\\CubeExplosions2_0\\assets\\scripts\\mousekeyreader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC8BEC4E-2F20-3EF4-4442-A6FB845B1C43}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\mousekeyreader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,45 +30,58 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Spawner.cs",
-              "DocumentMoniker": "D:\\Git\\CubeExplosions2_0\\CubeExplosions2_0\\Assets\\Scripts\\Spawner.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Spawner.cs",
-              "ToolTip": "D:\\Git\\CubeExplosions2_0\\CubeExplosions2_0\\Assets\\Scripts\\Spawner.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Spawner.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAJAAAAAAAAAA==",
+              "Title": "Cube.cs",
+              "DocumentMoniker": "D:\\Git\\CubeExplosions2_0\\CubeExplosions2_0\\Assets\\Scripts\\Cube.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Cube.cs",
+              "ToolTip": "D:\\Git\\CubeExplosions2_0\\CubeExplosions2_0\\Assets\\Scripts\\Cube.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Cube.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T15:18:37.45Z",
+              "WhenOpened": "2025-02-17T23:47:07.284Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CubeBehavior.cs",
-              "DocumentMoniker": "D:\\Git\\CubeExplosions2_0\\CubeExplosions2_0\\Assets\\Scripts\\CubeBehavior.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\CubeBehavior.cs",
-              "ToolTip": "D:\\Git\\CubeExplosions2_0\\CubeExplosions2_0\\Assets\\Scripts\\CubeBehavior.cs",
-              "RelativeToolTip": "Assets\\Scripts\\CubeBehavior.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAQwBYAAABHAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "MouseKeyReader.cs",
+              "DocumentMoniker": "D:\\Git\\CubeExplosions2_0\\CubeExplosions2_0\\Assets\\Scripts\\MouseKeyReader.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\MouseKeyReader.cs",
+              "ToolTip": "D:\\Git\\CubeExplosions2_0\\CubeExplosions2_0\\Assets\\Scripts\\MouseKeyReader.cs",
+              "RelativeToolTip": "Assets\\Scripts\\MouseKeyReader.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-17T15:16:35.686Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CubesInteraction.cs",
+              "DocumentMoniker": "D:\\Git\\CubeExplosions2_0\\CubeExplosions2_0\\Assets\\Scripts\\CubesInteraction.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\CubesInteraction.cs",
+              "ToolTip": "D:\\Git\\CubeExplosions2_0\\CubeExplosions2_0\\Assets\\Scripts\\CubesInteraction.cs",
+              "RelativeToolTip": "Assets\\Scripts\\CubesInteraction.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAxwAoAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-17T15:18:23.949Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MouseKeyReader.cs",
-              "DocumentMoniker": "D:\\Git\\CubeExplosions2_0\\CubeExplosions2_0\\Assets\\Scripts\\MouseKeyReader.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\MouseKeyReader.cs",
-              "ToolTip": "D:\\Git\\CubeExplosions2_0\\CubeExplosions2_0\\Assets\\Scripts\\MouseKeyReader.cs",
-              "RelativeToolTip": "Assets\\Scripts\\MouseKeyReader.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "Spawner.cs",
+              "DocumentMoniker": "D:\\Git\\CubeExplosions2_0\\CubeExplosions2_0\\Assets\\Scripts\\Spawner.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Spawner.cs",
+              "ToolTip": "D:\\Git\\CubeExplosions2_0\\CubeExplosions2_0\\Assets\\Scripts\\Spawner.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Spawner.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T15:16:35.686Z",
+              "WhenOpened": "2025-02-17T15:18:37.45Z",
               "EditorCaption": ""
             },
             {
@@ -75,7 +92,7 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\Detonator.cs",
               "ToolTip": "D:\\Git\\CubeExplosions2_0\\CubeExplosions2_0\\Assets\\Scripts\\Detonator.cs",
               "RelativeToolTip": "Assets\\Scripts\\Detonator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAwAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-17T15:04:49.215Z",
               "EditorCaption": ""
